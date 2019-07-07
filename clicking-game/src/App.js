@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import cards from "./friends.json";
 import "./App.css";
 
@@ -48,7 +49,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header 
+        score={this.state.score} highscore={this.state.highscore}>Memory clicking game
+          </Header><br></br>
         {this.state.cards.map(card => (
           <Card
             clickCounter={this.clickCounter}
@@ -57,7 +60,9 @@ class App extends Component {
             image={card.image}
           />
         ))}
+        <Footer />
       </Wrapper>
+      
     );
   }
 }
