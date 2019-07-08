@@ -1,19 +1,19 @@
 import React from "react";
 import "./Footer.css";
-
+ 
+// Setting style to the footer.
 var style = {
     backgroundColor: "rgb(80, 111, 223)",
     borderTop: "7px solid rgb(19, 19, 130)",
     textAlign: "center",
     padding: "20px",
-    
     position: "fixed",
     left: "0",
     bottom: "0",
     height: "80px",
     width: "100%",
 }
-
+// Adding a phantom div for a sticky footer
 var phantom = {
   display: 'block',
   padding: '20px',
@@ -21,6 +21,7 @@ var phantom = {
   width: '100%',
 }
 
+ //Function for the footer.
 function Footer({ children }) {
     return (
         <div>

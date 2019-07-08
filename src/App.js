@@ -1,3 +1,5 @@
+
+// Necessary imports.
 import React, { Component } from "react";
 import Card from "./components/Card";
 import Wrapper from "./components/Wrapper";
@@ -14,6 +16,7 @@ class App extends Component {
     highscore: 0
   };
 
+  // Function to restart the game if card was clicked more then once.
   restart = () => {
     if (this.state.score > this.state.highscore) {
       this.setState({highscore: this.state.score}, function() {
@@ -28,6 +31,7 @@ class App extends Component {
     return true;
   }
 
+  // Function for logic if card was clicked once randomly sort all cards
   clickCounter = id => {
     this.state.cards.find((j, i) => {
       if (j.id === id) {
@@ -45,7 +49,7 @@ class App extends Component {
     });
   }
   
-  // Map over this.state.cards and render a cardCard component for each card object
+  // Renders the Wrapper with Header/Card/Footer.
   render() {
     return (
       <Wrapper>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 
+// Function for the header
 const Header = props => (
   <div className="header">
     <div className="title">{props.children}</div>
