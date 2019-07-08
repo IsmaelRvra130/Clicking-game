@@ -1,7 +1,8 @@
 .wrapper {
     padding-top: 50px;
-    background: rgb(116, 119, 122);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7p3ugSMwBv08WzaA5MH6K0U_lu5J-KaETX6NDF3EJCi9Bc135w");
     height: 100%;
+    background-size: cover;
     display: flex;
     flex-flow: row wrap;
     padding: 20px;

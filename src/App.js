@@ -29,8 +29,8 @@ class App extends Component {
   }
 
   clickCounter = id => {
-    this.state.cards.find((o, i) => {
-      if (o.id === id) {
+    this.state.cards.find((j, i) => {
+      if (j.id === id) {
         if(cards[i].count === 0){
           cards[i].count = cards[i].count + 1;
           this.setState({score : this.state.score + 1}, function(){
